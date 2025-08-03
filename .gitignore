@@ -142,3 +142,57 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+
+# Project specific
+# Database files
+database/
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads and temporary files
+uploads/
+temp/
+tmp/
+
+# Build directories
+client/build/
+client/dist/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Video processing temporary files
+*.mp4
+*.avi
+*.mov
+*.mkv
+frames/
+processed/
+
+# Machine Learning models
+models/
+*.h5
+*.pkl
+*.joblib
+
+# Configuration files with sensitive data
+config/production.json
+config/staging.json
+
+# Claude AI files
+.claude
+*.claude

@@ -1,0 +1,221 @@
+.api-key-manager {
+  width: 100%;
+}
+
+.api-key-input-group {
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.api-key-input {
+  width: 100%;
+  padding: 12px 60px 12px 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease;
+}
+
+.api-key-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(201, 170, 113, 0.2);
+}
+
+.api-key-input.valid {
+  border-color: #4caf50;
+}
+
+.api-key-input.error {
+  border-color: #f44336;
+}
+
+.input-actions {
+  position: absolute;
+  right: 8px;
+  display: flex;
+  gap: 5px;
+}
+
+.toggle-visibility-btn,
+.clear-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-visibility-btn:hover,
+.clear-btn:hover {
+  color: var(--text-primary);
+  background-color: rgba(201, 170, 113, 0.1);
+}
+
+.clear-btn {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.clear-btn:hover {
+  color: #f44336;
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.validation-indicator {
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.validation-indicator.valid {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.validation-indicator.error {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.api-key-help {
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.help-section {
+  margin-bottom: 20px;
+}
+
+.help-section:last-child {
+  margin-bottom: 0;
+}
+
+.help-section h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.help-section h4::before {
+  content: '📋';
+  font-size: 14px;
+}
+
+.help-section p,
+.help-section li {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.help-section ol,
+.help-section ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.help-section ol li {
+  margin-bottom: 5px;
+}
+
+.help-section ul li {
+  margin-bottom: 3px;
+}
+
+.help-section a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.help-section a:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .api-key-input {
+    padding: 10px 50px 10px 12px;
+    font-size: 13px;
+  }
+  
+  .input-actions {
+    right: 6px;
+  }
+  
+  .toggle-visibility-btn,
+  .clear-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  
+  .api-key-help {
+    padding: 15px;
+  }
+  
+  .help-section h4 {
+    font-size: 0.95rem;
+  }
+  
+  .help-section p,
+  .help-section li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .api-key-input {
+    padding: 8px 45px 8px 10px;
+    font-size: 12px;
+  }
+  
+  .toggle-visibility-btn,
+  .clear-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+  }
+  
+  .validation-indicator {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  
+  .api-key-help {
+    padding: 12px;
+  }
+}
