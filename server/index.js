@@ -17,6 +17,7 @@ const upload = multer({ dest: 'uploads/' });
 // Routes
 app.use('/api/games', require('./routes/games'));
 app.use('/api/flashes', require('./routes/flashes'));
+app.use('/api/flash-events', require('./routes/flash-events'));
 app.use('/api/analysis', require('./routes/analysis'));
 
 // Serve React app in production
