@@ -189,6 +189,10 @@ models/
 *.pkl
 *.joblib
 
+# Allow server model definitions
+!server/models/
+!server/models/**
+
 # Configuration files with sensitive data
 config/production.json
 config/staging.json
